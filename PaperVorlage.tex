@@ -1,0 +1,216 @@
+% Bei Arial 11pt, bei Times New Roman 12pt
+\documentclass[11pt,a4paper]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lmodern}
+
+% Arialähnliche Schrift
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Um Subsubsections im Inhaltsverzeichnis anzuzeigen
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+% Für Zeilenabstand
+\usepackage[onehalfspacing]{setspace}
+% Alternativ für komplettes Dokument:
+% \usepackage[singlespacing]{setspace}
+% \usepackage[onehalfspacing]{setspace}
+% \usepackage[doublespacing]{setspace}
+% Um im Text zu ändern: \singlespacing, \onehalfspacing oder \doublespacing
+% Überschriften über mehrere Zeilen 1-fach
+% Blockzitate 1-fach
+% Beschriftung Tabellen und Abbildungen 1-fach
+% Fußnoten 1-fach
+% Listen 1-fach oder 1,5-fach
+% Verweise 1-fach
+
+% Times New Roman ähnliche Schrift
+% \usepackage{mathptmx}
+% \renewcommand{\familydefault}{\rmdefault}
+
+% Bei gebundenen Arbeiten (Bachelor- oder Masterarbeiten) links auf 4cm
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\author{Sebastian Wittmann}
+\title{Rhein Waal Vorlage}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\chead{\thepage}
+
+\usepackage{acronym}
+
+
+\begin{document}
+
+% Deckblatt Bachelorarbeit
+% \begin{titlepage}
+% \begin{center}
+% \fontsize{16pt}{16pt}\selectfont Hochschule Rhein-Waal\\
+% Fakultät Kommunikation und Umwelt\\
+% Prof. Dr. Jane Public\\
+% Prof. Dr. Martin Mustermann\\
+% \vspace{4cm}
+% \fontsize{22pt}{22pt}\selectfont\textbf{Titel}\\
+% \fontsize{20pt}{20pt}\selectfont Untertitel\\
+% \vspace*{12cm}
+% \fontsize{16pt}{16pt}\selectfont Bachelorarbeit\\
+% \vspace{2cm}
+% vorgelegt von\\
+% John Sample
+% \end{center}
+% \end{titlepage}
+
+
+
+
+
+
+% Titelseite Bachelorarbeit
+% \begin{titlepage}
+% \begin{center}
+% \fontsize{16pt}{16pt}\selectfont Hochschule Rhein-Waal\\
+% Fakultät Kommunikation und Umwelt\\
+% Prof. Dr. Jane Public\\
+% Prof. Dr. Martin Mustermann\\
+% \vspace{2cm}
+% \fontsize{22pt}{22pt}\selectfont\textbf{Titel}\\
+% \fontsize{20pt}{20pt}\selectfont Untertitel\\
+% \vspace*{4cm}
+% \fontsize{16pt}{16pt}\selectfont Bachelorarbeit\\
+% im Studiengang\\
+% Medien- und Kommunikationsinformatik\\
+% zur Erlangung des akademischen Grades\\
+% \vspace{1cm}
+% Bachelor of Science\\
+% \vspace{2cm}
+% vorgelegt von\\
+% John Sample\\
+% Beispielstraße 18\\
+% 12345 Beispielstadt\\
+% \vspace{1cm}
+% Matrikelnummer:\\
+% 98765\\
+% \vspace{1cm}
+% Abgabedatum:\\
+% Tag Monat Jahr
+% \end{center}
+% \end{titlepage}
+
+
+
+
+% Titelseite Seminararbeit
+\begin{titlepage}
+\begin{center}
+\fontsize{16pt}{16pt}\selectfont Hochschule Rhein-Waal\\
+Fakultät Kommunikation und Umwelt\\
+\vspace{2cm}
+Seminararbeit\\
+WS/SS 20xx/20xx\\
+Modul: Modulname\\
+\vspace{2cm}
+\fontsize{22pt}{22pt}\selectfont\textbf{Titel}\\
+\fontsize{20pt}{20pt}\selectfont Untertitel\\
+\vspace{8cm}
+John Sample\\
+\vspace{2cm}
+Matrikelnummer:\\
+98765\\
+\vspace{2cm}
+Abgabetermin:\\
+Tag Monat Jahr
+\end{center}
+\end{titlepage}
+
+\pagenumbering{roman}
+\setcounter{page}{2}
+
+
+% Max 250 Zeichen und immer englisch
+\chapter*{Abstract}
+\thispagestyle{scrheadings}
+Here goes the abstract
+
+\chapter*{Vertraulichkeitsklausel}
+\thispagestyle{scrheadings}
+Die folgende [Semesterarbeit, Seminararbeit, Bachelorarbeit, Masterarbeit, …] enthält vertrauliche Daten und Informationen, die durch <Name der Drittpartei und Gesellschaftsform> bereitgestellt wurden. Die Daten und Informationen dürfen vor dem <Datum> oder ohne ausdrückliche Erlaubnis durch <Name der Drittpartei und Gesellschaftsform> weder in ihrer Gesamtheit noch in Auszügen preisgegeben, weitergeleitet oder in irgend-einer Weise öffentlich gemacht werden. Die [Semesterarbeit, Seminar-arbeit, Bachelorarbeit, Maserarbeit, …] wird den Prüfern ausschließlich zum Zwecke der Beurteilung der Arbeit zur Verfügung gestellt.
+
+\tableofcontents
+\thispagestyle{scrheadings}
+
+
+\chapter*{Abkürzungsverzeichnis}
+\thispagestyle{scrheadings}
+\begin{acronym}
+\acro{z.B.}[z.B.]{zum Beispiel}
+\end{acronym}
+
+\listoffigures
+\thispagestyle{scrheadings}
+
+\listoftables
+\thispagestyle{scrheadings}
+
+
+
+
+
+
+\chapter{Erstes Kapitel}
+\pagenumbering{arabic}
+\thispagestyle{scrheadings}
+Hier steht Text
+
+\section{Erstes Unterkapitel}
+Hier muss auch Text stehen
+
+\section{Zweiter Unterkapitel}
+Hier auch Text
+\begin{figure}[h]
+Hier ist eine Abbildung
+\caption{Abbildung Nummer eins}
+\end{figure}
+
+\subsection{Erstes Unterunterkapitel}
+Diese Kapitel sind auch möglich. Subsubsection sollte vermieden werden.\\
+\begin{table}[h]
+\begin{tabular}{l l}
+Spalte 1 & Spalte 2
+\end{tabular}
+\caption{Tabelle 1}
+\end{table}
+
+\subsubsection{Erstes Unterunterunterkapitel}
+Möglich, sollte aber vermieden werden
+
+\subsubsection{Zweites Unterunterunterkapitel}
+Ich bin kein Text, ich putz' hier nur
+
+\subsection{Zweites Unterunterkapitel}
+Man kennt es
+
+\section{Drittes Unterkapitel}
+Und auch hier kommt was hin \footnote{Fußnoten dürfen auch verwendet werden}
+
+\section{Viertel Unterkapitel}
+''Zitate über 40 Zeichen sollten links und rechts 1 cm Platz haben''
+
+\appendix
+\chapter{Anhang 1}
+Hier kann mehr Zeug hin
+
+\chapter{Anhang 2}
+Und hier auch nochmal was
+
+
+\end{document}
